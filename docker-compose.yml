@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  continuousintegrationenv:
+    build: .
+    image: simo215d/continuousintegrationenv:latest
+    ports:
+      - "3001:3000"
