@@ -18,7 +18,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Docker goes brrrr' 
+                echo 'Docker goes brrrr'
+                sh 'docker-compose up' 
             }
         }
         stage('Deploy') {
