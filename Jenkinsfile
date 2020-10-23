@@ -3,12 +3,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Simon was here!!!1' 
-            }
-        }
-        stage('Git?') {
-            steps {
-                echo 'Git is actually the first thing that happens because thats how it reads this file :P' 
+                echo 'Simon was here!!!1 INSIDE THE JENKINS SCRIPT... Git was a success' 
             }
         }
         stage('Test') {
