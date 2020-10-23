@@ -19,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Docker goes brrrr'
-                sh 'docker-compose up' 
+                sh 'docker-compose up -d' 
             }
         }
         stage('Deploy') {
