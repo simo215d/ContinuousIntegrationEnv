@@ -6,6 +6,8 @@ pipeline {
                 echo 'Simon was here!!!1 INSIDE THE JENKINS SCRIPT... Git was a success'
                 echo 'Now lets see if sh commands work:'
                 sh 'ls'
+                echo 'Ultimate test do an npm command for libs omg:'
+                sh 'npm install'
             }
         }
         stage('Test') {
