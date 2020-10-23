@@ -12,7 +12,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Did it fail or WIN!' 
+                echo 'Did it fail or WIN!'
+                sh 'npm run test' 
             }
         }
         stage('Build') {
