@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Simon was here!!!1 INSIDE THE JENKINS SCRIPT... Git was a success' 
+                echo 'Simon was here!!!1 INSIDE THE JENKINS SCRIPT... Git was a success'
+                echo 'Now lets see if sh commands work:'
+                sh 'ls'
             }
         }
         stage('Test') {
