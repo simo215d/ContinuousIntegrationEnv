@@ -24,7 +24,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'simonweb.ninja is the place to be?' 
+                echo 'simonweb.ninja is the place to be?'
+                sh 'az webapp up --name simonweb' 
             }
         }
     }
