@@ -3,16 +3,16 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Simon was here!!!1 INSIDE THE JENKINS SCRIPT... Git was a success'
+                echo 'JENKINS SCRIPT... Git was a success'
                 echo 'Now lets see if sh commands work:'
                 sh 'ls'
-                echo 'Ultimate test do an npm command for libs omg:'
+                echo 'npm command for libs:'
                 sh 'npm install'
             }
         }
         stage('Test') {
             steps {
-                echo 'Did it fail or WIN!'
+                echo 'fail? win!'
                 sh 'npm run test' 
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'simonweb.ninja is the place to be?'
+                echo 'simonweb.ninja is the place to be'
                 sh 'az webapp up --name simonweb' 
             }
         }
